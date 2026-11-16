@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adventure and Trekking Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f1f5f1;
+        }
+
+        header {
+            background-color: #234b32;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #173522;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #234b32;
+        }
+
+        .trips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 8px gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #234b32;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .panel {
+            background-color: #dcebdc;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        .safety {
+            background-color: #fff3cd;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #234b32;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #38734b;
+        }
+
+        footer {
+            background-color: #173522;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .trips {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Adventure Explorer</h1>
+    <p>Explore Nature | Experience Adventure</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#treks">Trekking Routes</a>
+    <a href="#schedule">Schedules</a>
+    <a href="#equipment">Equipment</a>
+    <a href="#safety">Safety</a>
+    <a href="#booking">Booking</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Adventure Explorer</h2>
+    <p>
+        Discover beautiful mountains, exciting trekking routes,
+        camping adventures and amazing natural destinations.
+        Join us to explore nature and enjoy unforgettable trips.
+    </p>
+</section>
+
+<section id="treks">
+    <h2>Popular Trekking Routes</h2>
+
+    <div class="trips">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                 alt="Mountain Trek">
+            <div class="info">
+                <h3>Mountain Trek</h3>
+                <p>Location: Himalayas</p>
+                <p>Difficulty: Hard</p>
+                <p>Duration: 5 Days</p>
+                <p class="price">₹8,000</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306"
+                 alt="Forest Trek">
+            <div class="info">
+                <h3>Forest Trek</h3>
+                <p>Location: Western Ghats</p>
+                <p>Difficulty: Medium</p>
+                <p>Duration: 2 Days</p>
+                <p class="price">₹3,500</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4"
+                 alt="Camping Adventure">
+            <div class="info">
+                <h3>Camping Adventure</h3>
+                <p>Location: Coorg</p>
+                <p>Difficulty: Easy</p>
+                <p>Duration: 1 Day</p>
+                <p class="price">₹2,000</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="schedule">
+    <h2>Trip Schedules</h2>
+
+    <div class="panel">
+        <h3>Mountain Trek</h3>
+        <p>Day 1: Arrival and Introduction</p>
+        <p>Day 2: Trekking and Camping</p>
+        <p>Day 3: Mountain Exploration</p>
+        <p>Day 4: Return Journey</p>
+    </div>
+
+    <div class="panel">
+        <h3>Forest Trek</h3>
+        <p>Day 1: Nature Walk and Trekking</p>
+        <p>Day 2: Camping and Return</p>
+    </div>
+</section>
+
+<section id="equipment">
+    <h2>Equipment Checklist</h2>
+
+    <div class="panel">
+        <ul>
+            <li>Trekking Shoes</li>
+            <li>Backpack</li>
+            <li>Water Bottle</li>
+            <li>First Aid Kit</li>
+            <li>Flashlight</li>
+            <li>Raincoat</li>
+            <li>Warm Clothes</li>
+            <li>Food and Snacks</li>
+        </ul>
+    </div>
+</section>
+
+<section id="safety">
+    <h2>Safety Guidelines</h2>
+
+    <div class="safety">
+        <ul>
+            <li>Follow the instructions of the trek guide.</li>
+            <li>Carry sufficient drinking water.</li>
+            <li>Wear proper trekking shoes.</li>
+            <li>Stay with your trekking group.</li>
+            <li>Check weather conditions before trekking.</li>
+            <li>Carry a first aid kit.</li>
+            <li>Avoid dangerous paths and risky activities.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="booking">
+    <h2 style="text-align:center;">Adventure Trip Booking</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Select Adventure Package:</label>
+        <select required>
+            <option value="">Choose Package</option>
+            <option>Mountain Trek - ₹8000</option>
+            <option>Forest Trek - ₹3500</option>
+            <option>Camping Adventure - ₹2000</option>
+        </select>
+
+        <label>Trip Date:</label>
+        <input type="date" required>
+
+        <label>Number of Participants:</label>
+        <input type="number" min="1" required>
+
+        <button type="submit">Book Adventure</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Adventure Explorer</p>
+    <p>Explore Nature | Travel Safely | Enjoy Adventure</p>
+</footer>
+
+</body>
+</html>
